@@ -50,7 +50,7 @@ h2 {
 
 .carousel .carousel-control-next,
 .carousel .carousel-control-prev {
-  width: 4%;
+  width: 10%;
 }
 
 .custom-card.variation-2 .tab-card .card-img-top {
@@ -266,23 +266,22 @@ h2 {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 637px;
 }
 .next-gen-therapy .img1 {
-  left: 2em;
-  top: 2em;
+  left: 4%;
+  top: 3%;
 }
 .next-gen-therapy .img2 {
-  right: 2em;
-  top: 2em;
+  right: 4%;
+  top: 3%;
 }
 .next-gen-therapy .img3 {
-  top: 22em;
-  left: 22em;
+  top: 46%;
+  left: 22%;
 }
 .next-gen-therapy .img4 {
-  top: 22em;
-  right: 22em;
+  top: 46%;
+  right: 22%;
 }
 
 svg.material-icons {
@@ -438,8 +437,6 @@ a:hover {
 
 footer {
   margin-top: 30px;
-  display: flex;
-  align-items: center;
   line-height: 20px;
   background: #f0f0f0;
 }
@@ -458,6 +455,7 @@ footer .footer-logo {
 footer .nav-link {
   color: #303030;
   padding: 0 20px;
+  display: inline-block;
 }
 footer .social-media-links .nav-link {
   padding: 0 0 0 10px;
@@ -471,8 +469,12 @@ footer hr {
   margin-left: 1.5em;
   margin-bottom: 1.5em;
 }
-footer .list-1 {
+footer .list-1 .nav-link {
   margin-bottom: 2.2em;
+}
+footer .list-2,
+footer .list-1 {
+  padding-left: 0;
 }
 footer .list-2 .nav-link,
 footer .list-1 .nav-link {
@@ -514,19 +516,52 @@ svg#clouds {
 }
 
 /* Responsive Styles */
-@media screen and (min-width: 768px) {
-  .next-gen-therapy .img3 {
-    left: 9em;
+@media (max-width: 768px) {
+  footer .social-media-links {
+    float: left;
+    margin: 10px;
   }
 
-  .next-gen-therapy .img4 {
-    right: 10em;
+  .next-gen-therapy .text1 {
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
   }
-}
-@media screen and (max-width: 575px) {
-  svg#rocket-smoke {
-    display: none;
-    visibility: hidden;
+  .next-gen-therapy .text1 > img {
+    width: 60%;
+  }
+  .next-gen-therapy .img1,
+  .next-gen-therapy .img2,
+  .next-gen-therapy .img3,
+  .next-gen-therapy .img4 {
+    width: auto;
+  }
+  .next-gen-therapy .img1 > img,
+  .next-gen-therapy .img2 > img,
+  .next-gen-therapy .img3 > img,
+  .next-gen-therapy .img4 > img {
+    width: 50%;
+  }
+  .next-gen-therapy .text1 {
+    top: 2%;
+  }
+  .next-gen-therapy .img1 {
+    left: 4%;
+    top: 3%;
+  }
+  .next-gen-therapy .img2 {
+    right: 1%;
+    top: 3%;
+    text-align: right;
+  }
+  .next-gen-therapy .img3 {
+    top: 46%;
+    left: 22%;
+  }
+  .next-gen-therapy .img4 {
+    top: 46%;
+    right: 22%;
+    text-align: right;
   }
 }
 @media (min-width: 992px) {
@@ -575,10 +610,10 @@ svg#clouds {
   }
 
   .next-gen-therapy .img3 {
-    left: 22em;
+    left: 22%;
   }
 
   .next-gen-therapy .img4 {
-    right: 22em;
+    right: 22%;
   }
 }
